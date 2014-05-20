@@ -3,10 +3,19 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <h1>JavaScript Beginner 04</h1>
-    <span>Instructions:</span>
-    <p>Create a small bilingual dictionary as a Javascript object in the following fashion: </p>
-    <code>{"merry":"god", "christmas":"jul", "and":"och", "happy":gott", "new":"nytt", "year":"år"}</code>
-    <p>and use it to translate your Christmas cards from English into Swedish.</p>
+      <textarea id="translate-text">Merry Christmas and Happy New Year.</textarea>
+      <button type="button" onclick="TranslateString('translate-text')">Translate</button>
+      <div id="translated-text"></div>
+      
+      <div>
+          <h2>Improvements</h2>
+          <ul>
+              <li>Make it handle punctuation (better)</li>
+              <li>Make it use regex instead of string.replace</li>
+              <li>Make it handle letter case</li>
+              <li>make it look cooler</li>
+              <li>add explosions/tattoos</li>
+          </ul>
+      </div>
   </body>
 </html>
